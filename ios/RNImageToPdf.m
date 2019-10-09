@@ -7,7 +7,12 @@
 //
 
 #import "RNImageToPdf.h"
+#if __has_include(<React/RCTAssert.h>)
 #import <React/RCTLog.h>
+#else
+#import "RCTLog.h"
+#endif
+
 
 @interface RNImageToPdf ()
 @property (strong, nonatomic) NSMutableArray *imageViewArray;
