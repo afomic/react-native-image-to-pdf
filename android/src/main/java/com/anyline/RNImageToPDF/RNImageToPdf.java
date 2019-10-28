@@ -103,7 +103,7 @@ public class RNImageToPdf extends ReactContextBaseJavaModule {
         document.close();
     }
 
-    private Bitmap getImageFromFile(String path) throws IOException {
+    private Bitmap getImageFromFile(String path) throws Exception {
         Uri uri = Uri.parse(path);
         String realPath = FilePathUtil.getFilePath(reactContext, uri);
 
